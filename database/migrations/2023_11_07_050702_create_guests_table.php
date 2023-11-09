@@ -14,7 +14,7 @@ class CreateGuestsTable extends Migration
     public function up()
     {
         Schema::create('guests', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id');//自動的に数字増やす＝主キー
             $table->string('name');
             $table->string('address');
             $table->string('tel');
