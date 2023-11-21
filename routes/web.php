@@ -23,6 +23,13 @@ Route::post('/guest/add', 'GuestController@create'); //利用者管理の追加�
 
 Route::get('/reserve', 'ReserveController@index'); //予約管理の一覧表示
 
-Route::get('/room', 'GuestController@index'); //部屋管理の一覧表示
+Route::get('/reservation_detail', 'Reservation_detailController@index'); //予約明細の一覧表示
 
-Route::get('/roomtype', 'GuestController@index');//部屋種別管理の一覧表示
+Route::get('/search', 'ReserveController@searchpage'); //予約検索ページ
+
+// Route::post('/search', 'ReserveController@checkAvailability'); //予約検索
+Route::post('/search', 'ReserveController@checkAvailability')->name('checkAvailability');//ルート名は 'checkAvailability' です。ビュー内(bladeのこと？)でリンクやフォームのアクションを指定する際には、この名前を使用する必要があります。
+
+Route::get('/room', 'RoomController@index'); //部屋管理の一覧表示
+
+Route::get('/roomtype', 'RoomtypeController@index');//部屋種別管理の一覧表示

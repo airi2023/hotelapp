@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
-    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 
     <title>福楼(ﾌｸﾛｳ)|老舗旅館</title>
     <style>
@@ -56,6 +58,11 @@
 
         table tr:nth-child(odd) {
             background-color: #eee;
+        }
+
+
+        form{
+            margin: auto;
         }
 
         /* ナビ ----------------------------------------- */
@@ -173,6 +180,8 @@
                         <ul> <!-- 「li」タグの中に「ul」タグを更に追加しておく。ここは２層目 -->
                             <li><a href="/reserve">一覧表示</a></li>
                             <li><a href="/reserve/add">追加</a></li>
+                            <li><a href="/reservation_detail">予約明細</a></li>
+                            <li><a href="/search">予約検索</a></li>
                         </ul>
                     </li>
 
@@ -180,7 +189,7 @@
                         <a href="/room">部屋管理</a>
                         <ul> <!-- 「li」タグの中に「ul」タグを更に追加しておく。ここは２層目 -->
                             <li><a href="/room">一覧表示</a></li>
-                            <li><a href="/room/add">追加</a></li>
+                            {{-- <li><a href="/room/add">追加</a></li> --}}
                         </ul>
                     </li>
 
@@ -188,7 +197,7 @@
                         <a href="/roomtype">部屋種別</a>
                         <ul> <!-- 「li」タグの中に「ul」タグを更に追加しておく。ここは２層目 -->
                             <li><a href="/roomtype">一覧表示</a></li>
-                            <li><a href="/roomtype/add">追加</a></li>
+                            {{-- <li><a href="/roomtype/add">追加</a></li> --}}
                         </ul>
                     </li>
 

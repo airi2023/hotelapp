@@ -13,18 +13,3 @@
     </table>
 @endsection
 
-<style>
-    table{
-        width: 80%;
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    table th, table td{
-        padding: 10px 0;
-        text-align: center;
-    }
-    table tr:nth-child(odd){
-        background-color: #eee;
-    }
-
-</style>
