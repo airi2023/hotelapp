@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +23,8 @@ Route::get('/guest/add', 'GuestController@add'); //利用者管理の追加機�
 Route::post('/guest/add', 'GuestController@create'); //利用者管理の追加機能
 
 Route::get('/reserve', 'ReserveController@index'); //予約管理の一覧表示
+Route::get('/reserve/add', 'ReserveController@add'); //予約管理の追加機能
+Route::post('/reserve/add', 'ReserveController@create'); //予約管理の追加機能
 
 Route::get('/reservation_detail', 'Reservation_detailController@index'); //予約明細の一覧表示
 

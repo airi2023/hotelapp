@@ -5,7 +5,7 @@
         <th>部屋ID</th>
         <th>部屋種別ID</th>
         <th>部屋種別名称</th>
-        <th>部屋番号</th>
+        <th>部屋名</th>
 
         @foreach ($items as $item)
             {{-- 変数items＝コントローラーから渡された値(Room::all();)が入っている。そこから各項目を取り出して変数$itemに１つずつ入れている --}}

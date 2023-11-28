@@ -11,6 +11,9 @@ class Reserve extends Model
     //     return $this->belongsTo('App\User');
     // }
 
+    // protected $fillable = ['guest_id','number_of_people','checkin','checkout','room_name'];
+    protected $fillable = ['guest_id','number_of_people','checkin','checkout'];
+
     // 主キーにid以外の名前を付けているなら指定する
     protected $primaryKey = 'reserve_id';
 
@@ -28,4 +31,5 @@ class Reserve extends Model
         // 中間テーブル「予約明細」の、外部キー以外のカラム「stay_days」「fee」も表示
         return $this->belongsToMany('App\Room', 'reservation_details', 'reserve_id', 'room_id')->withPivot('stay_days', 'fee');
     }
+    
 }
