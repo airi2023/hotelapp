@@ -9,6 +9,7 @@
         <td>{{$guest->address}}</td>
         <td>{{$guest->tel}}</th>
     </tr>
+    
     @endforeach
     </table>
 @endsection
