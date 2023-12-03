@@ -207,9 +207,7 @@
 
     </header>
 
-    <body>
         @yield('body')
-    </body>
 </body>
 
 </html>
