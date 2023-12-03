@@ -13,8 +13,19 @@
     <style>
         /* bootstrapのデフォルトCSS変更 */
         .navbar-expand-lg .navbar-nav .nav-link {
+            /* ナビ間の余白 */
             padding-right: 1.5rem;
             padding-left: 1.5rem;
+        }
+        .navbar{
+            /* ナビ背景色 */
+            background-color: #0d0b24!important;
+            opacity: 0.95;
+        }
+        
+        .navbar-collapse{
+            text-align: center;
+            /* スマホメニュー文字中央揃え */
         }
 
         /* css */
@@ -80,7 +91,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
           
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        {{-- <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> --}}
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Top <span class="sr-only">(current)</span></a>

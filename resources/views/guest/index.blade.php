@@ -1,5 +1,6 @@
 {{-- @extends('layouts.hotel') --}}
-@extends('layouts.base')
+{{-- @extends('layouts.base') --}}
+@extends('layouts.hpbase')
 
 @section('body')
     <table>
