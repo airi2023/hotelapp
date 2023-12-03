@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <!-- BootStrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <title>福楼(ﾌｸﾛｳ)|老舗旅館</title>
+    <title>Crystal Resort</title>
     <style>
         /* bootstrapのデフォルトCSS変更 */
         .navbar-expand-lg .navbar-nav .nav-link {
@@ -86,7 +86,7 @@
     <header>
         <!-- ナビ -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Crystal Resort</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

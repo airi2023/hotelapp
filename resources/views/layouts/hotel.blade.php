@@ -12,7 +12,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     
 
-    <title>福楼(ﾌｸﾛｳ)|老舗旅館</title>
+    <title>Crystal Resort</title>
     <style>
         /* 全体共通 ------------------------------------------ */
         body {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <!-- BootStrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <title>Resort Hotel</title>
+    <title>Crystal Resort</title>
     <style>
         /* bootstrapのデフォルトCSS変更 */
         .navbar-expand-lg .navbar-nav .nav-link {
@@ -74,6 +74,7 @@
             /*中央揃え*/
             width: 100%;
             -webkit-text-size-adjust: 100%;
+            font-family: "游明朝";
         }
 
         /* メイン画像 静止画の場合 */
@@ -96,9 +97,47 @@
             background-color: rgba(13, 11, 36, 0.2);
         }
 
+        /* スライダー */
+
+        #carousel-2:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: center top /100%;
+            background-color: rgba(13, 11, 36, 0.2);
+            position: absolute;
+            z-index: 2;
+        }
+
         .carousel-item{
             transition: transform 2s ease, opacity .5s ease-out;
         }
+
+
+        /* スライダー上の文字 */
+        .slider-text{
+            position: absolute;
+            top: 50%;left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            z-index: 150;
+            color: #fff;
+            line-height: 2.5;
+        }
+        .slider-text h2{
+            margin: 0;
+            padding: 0;
+            /* font-size: 2rem; */
+            font-size: 2.5vw;
+            color: #fff; 
+            text-align: center;
+            /* 游明朝体 */
+            font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+            line-height: 1.6;
+}
+        .slider-text p{margin: 0;padding: 0;font-size: 1vw;text-align: center;font-family: "游明朝体";}
 
 
         /* スクロールダウン */
@@ -221,7 +260,7 @@
     <header>
         <!-- ナビ -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Resort Hotel</a>
+        <a class="navbar-brand" href="#">Crystal Resort</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -284,6 +323,12 @@
             <div class="carousel-item data-interval='10000'">
                 <img class="d-block w-100" src="images/4.jpg" alt="Third slide">
             </div>
+        </div>
+
+        <div class="slider-text">
+            <h2>極上のリゾート体験、究極のくつろぎ。</h2>
+            <h2>最高峰のおもてなしを</h2>
+            <p>Crystal Resort</p>
         </div>
         
         <div class="scrolldown">
