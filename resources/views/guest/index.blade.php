@@ -1,4 +1,5 @@
-@extends('layouts.hotel')
+{{-- @extends('layouts.hotel') --}}
+@extends('layouts.base')
 
 @section('body')
     <table>

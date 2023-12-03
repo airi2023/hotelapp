@@ -8,8 +8,9 @@
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
 
+    <!-- BootStrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    
 
     <title>福楼(ﾌｸﾛｳ)|老舗旅館</title>
     <style>
@@ -35,10 +36,6 @@
             text-decoration: none;
         }
 
-        table {
-            margin: auto;
-        }
-
         th {
             /*予約一覧のテーブルのth幅調整のため*/
             min-width: 140px;
@@ -48,6 +45,7 @@
             width: 80%;
             border-collapse: collapse;
             border-spacing: 0;
+            margin: auto;
         }
 
         table th,
