@@ -28,9 +28,34 @@
             /* スマホメニュー文字中央揃え */
         }
 
-        /* css */
-        header{
-            margin-bottom: 110px;/* ナビ下の余白 */
+        /* ナビホバー時*/
+        .navbar-expand-lg .navbar-nav .nav-link:hover {
+            color: #fffcf2;
+            transition : all 0.5s;
+        }
+        /* 中央から下線 */
+        .navbar-expand-lg .navbar-nav .nav-link {
+            position: relative;
+            text-align: center;
+            display: inline-block;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link::before {
+            content: "";
+            position: absolute;
+            left: 100%;
+            right: 100%;
+            bottom: 0;
+            height: 1px;
+            /* background-color: #30a9de; */
+            background-color: #fff;
+            -webkit-transition: left 0.3s ease, right 0.3s ease;
+            -moz-transition: left 0.3s ease, right 0.3s ease;
+            -o-transition: left 0.3s ease, right 0.3s ease;
+            transition: left 0.3s ease, right 0.3s ease;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link:hover::before {
+            left: 0;
+            right: 0;
         }
 
         /* 全体共通 ------------------------------------------ */
@@ -45,6 +70,12 @@
             -webkit-text-size-adjust: 100%;
         }
 
+
+        header{
+            margin-bottom: 110px;/* ナビ下の余白 */
+        }
+
+        
         .logo {
             font-family: "游明朝";
             font-size: 33px;
