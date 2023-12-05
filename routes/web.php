@@ -26,6 +26,11 @@ Route::get('/reserve', 'ReserveController@index'); //予約管理の一覧表示
 Route::get('/reserve/add', 'ReserveController@add'); //予約管理の追加機能
 Route::post('/reserve/add', 'ReserveController@create'); //予約管理の追加機能
 
+
+Route::get('/guest/edit', 'GuestController@edit');//更新ページに遷移した後の表示
+Route::post('/guest/update', 'GuestController@update');//更新
+
+
 Route::get('/reservation_detail', 'Reservation_detailController@index'); //予約明細の一覧表示
 
 Route::get('/search', 'ReserveController@searchpage'); //予約検索ページ
