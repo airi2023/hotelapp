@@ -13,7 +13,8 @@
 */
 
 Route::get('/', function () { //デフォルトページ
-    return view('welcome');
+    // return view('welcome');
+    return view('layouts.hpbase');
 });
 
 

@@ -126,7 +126,7 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Top <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">Top</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/guest">利用者管理</a>
