@@ -23,6 +23,7 @@ Route::get('/top', function () { //デフォルトページ
 });
 
  //テストコメント
+ //テストコメント2
 
 Route::get('/guest', 'GuestController@index'); //利用者管理の一覧表示
 
