@@ -17,6 +17,10 @@ Route::get('/', function () { //デフォルトページ
     return view('layouts.hpbase');
 });
 
+Route::get('/top', function () { //デフォルトページ
+    // return view('welcome');
+    return view('layouts.hpbase');
+});
 
 Route::get('/guest', 'GuestController@index'); //利用者管理の一覧表示
 
