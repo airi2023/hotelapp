@@ -22,6 +22,8 @@ Route::get('/top', function () { //デフォルトページ
     return view('layouts.hpbase');
 });
 
+ //テストコメント
+
 Route::get('/guest', 'GuestController@index'); //利用者管理の一覧表示
 
 Route::get('/guest/add', 'GuestController@add'); //利用者管理の追加機能
